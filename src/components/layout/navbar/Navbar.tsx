@@ -16,7 +16,7 @@ const Navbar: FC = ({ }) => {
 
     return (
         <>
-            <header className="border-b border-gray-300 bg-white min-h-[60px] px-3 py-3 tracking-wide relative z-50">
+            <header className="bg-white min-h-[60px] px-3 py-3 tracking-wide relative z-50">
                 <div className="flex flex-wrap items-center max-lg:gap-y-6 max-sm:gap-x-4 max-w-7xl mx-auto">
                     <Logo/>
                     <div id="collapseMenu"
