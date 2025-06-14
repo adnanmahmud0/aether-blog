@@ -16,6 +16,8 @@ model User {
   emailVerified DateTime?
   accounts      Account[]
   sessions      Session[]
+  resetToken        String?  @db.VarChar(255)
+  resetTokenExpiry  DateTime?
 }
 
 
