@@ -1,5 +1,6 @@
 import NewBlog from "@/components/home/new-blog/NewBlog";
 import NewBlogs from "@/components/home/new-blogs/NewBlogs";
+import NewsLetter from "@/components/home/newsletter/NewsLetter";
 import PopularBlogs from "@/components/home/popular-blogs/PopularBlogs";
 
 
@@ -17,6 +18,11 @@ export default function Page() {
       <section className="m-6 md:m-0">
         <PopularBlogs />
       </section>
+
+      <section>
+        <NewsLetter />
+      </section>
+
     </>
   )
 }
