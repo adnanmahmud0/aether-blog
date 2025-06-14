@@ -12,7 +12,7 @@ model User {
   name          String?
   email         String   @unique
   password      String?
-  image         String?      // base64 or URL
+  image         String?  @db.VarChar(255)
   emailVerified DateTime?
   accounts      Account[]
   sessions      Session[]

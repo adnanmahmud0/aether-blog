@@ -8,7 +8,7 @@ export async function POST(req: NextRequest) {
   const name = formData.get('name') as string;
   const email = formData.get('email') as string;
   const password = formData.get('password') as string;
-  const image = formData.get('image') as File | null;
+  const image = formData.get('image') as string;
 
   if (!name || !email || !password) {
     return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
       name,
       email,
       password: hashedPassword,
-      image: image ? 'placeholder-or-base64-or-url' : null,
+      image,
     },
   });
 
